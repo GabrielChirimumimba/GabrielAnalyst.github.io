@@ -172,19 +172,54 @@ h1 {
   width: 80%;
 }
 
-/* Center footer contact */
-footer .split.contact {
+/* Experience Section (full center layout) */
+.experience {
   text-align: center;
-  display: block !important;
+  padding: 3em 2em;
 }
-footer .split.contact section {
-  margin-bottom: 20px;
+
+.experience article {
+  max-width: 750px;
+  margin: 0 auto 2.5em auto;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2em;
+  background: #fafafa;
 }
-footer .split.contact ul.icons {
+
+.experience article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1em 0;
+}
+
+.experience .date {
+  display: block;
+  font-size: 0.9em;
+  color: #888;
+  margin-top: -0.5em;
+  margin-bottom: 1em;
+}
+
+/* Footer Centered */
+footer .contact {
+  text-align: center;
+  padding: 2em;
+}
+
+footer .contact div {
+  margin-bottom: 1.5em;
+}
+
+footer .contact ul.icons {
   display: flex;
   justify-content: center;
   gap: 1em;
   padding: 0;
   list-style: none;
 }
+
+
 
