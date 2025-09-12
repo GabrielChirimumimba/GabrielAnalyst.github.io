@@ -3,227 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Gabriel's Portfolio</title>
     <style>
-
-#nav-menu {
-  background-color: #333; /* Background color of the navigation bar */
-  color: #fff; /* Text color */
-  padding: 15px; /* Padding around the content inside the navigation bar */
-  text-align: center; /* Center-align text */
-}
-
-#nav-menu a {
-  text-decoration: none; /* Remove underlines from links */
-  color: #fff; /* Link text color */
-  padding: 10px 20px; /* Padding around each link */
-  margin: 0 10px; /* Margin between links */
-  display: inline-block; /* Make links display as blocks next to each other */
-}
-
-#nav-menu a:hover {
-  background-color: #555; /* Background color on hover */
-}
-
-
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-image: url('images/your-background.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
             color: #333;
         }
 
         header {
-            background-color: #4CAF50;
-            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
             text-align: center;
             color: white;
         }
 
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 10px;
+        nav#nav-menu {
+            background-color: rgba(51, 51, 51, 0.9);
+            text-align: center;
+            padding: 15px;
         }
 
-        nav a {
-            color: white;
+        nav#nav-menu a {
+            color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        nav#nav-menu a:hover {
+            background-color: #555;
+            border-radius: 5px;
         }
 
         section {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-bottom: 40px;
         }
 
-        body {
-  margin: 0;
-  padding: 0;
-}
+        h1, h2 {
+            text-align: center;
+            color: navy;
+        }
 
-.more-projects-button {
-  background-color: rgba(0, 0, 0, 0.7); 
-  padding: 15px 30px; 
-  text-align: center; 
-  position: relative; 
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
 
-  /* Responsive styles */
-  @media (max-width: 600px) {
-    padding: 10px 20px;
-  }
-}
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
 
-.more-projects-button a {
-  text-decoration: none;
-  color: #fff; /* White text color */
-  font-size: 16px; 
-  transition: font-size 0.3s, box-shadow 0.3s; /* Smooth transition effect */
+        li {
+            margin-bottom: 10px;
+        }
 
-  /* Hover styles */
-  &:hover {
-    font-size: 18px; /* Increase font size on hover */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect on hover */
-  }
-}
+        .experience {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
 
+        .experience img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
 
-        #Experience {
-    font-family: "Times New Roman", serif;
-    color: navy;
-    font-size: 18px;
+        .experience img:hover {
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+        }
 
-h2 {
-  font-size: 22px;
-}
-p {
-  font-size: 16px;
-}
+        .experience-content {
+            flex: 1;
+        }
 
-    @media (max-width: 600px) {
-  #Experience {
-    font-size: 16px; 
-  }
-}
-}
-#amazon_logo {
-    max-width:45%;
-    height: auto;
-    display: block; /* Ensures the image behaves as a block element */
-    float: left; /* Float the image to the left of the text */
-    margin-right: 20px; /* Add some space between the image and text */
-    transition: box-shadow 0.3s ease; /* Add a smooth transition for the glow effect */
-    @media (max-width: 600px) {
-  #amazon_logo {
-    max-width: 50%; /* Adjust the maximum width for smaller screens */
-  }
-}
-}
+        .divider {
+            height: 2px;
+            background-color: #ccc;
+            margin: 40px 0;
+        }
 
-#amazon_logo:hover {
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Glow effect on hover */
-}
-	    <br>
-    #amazon_logo1 {
-    max-width:15%;
-    height: auto;
-    display: block; /* Ensures the image behaves as a block element */
-    float: left; /* Float the image to the left of the text */
-    margin-right: 10px; /* Add some space between the image and text */
-    transition: box-shadow 0.3s ease; /* Add a smooth transition for the glow effect */
-    @media (max-width: 600px) {
-  #amazon_logo1 {
-    max-width: 50%; /* Adjust the maximum width for smaller screens */
-  }
-}
-}
-<br>
-#amazon_logo1:hover {
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Glow effect on hover */
-}
-	    #amazon_logo2 {
-    max-width:15%;
-    height: auto;
-    display: block; /* Ensures the image behaves as a block element */
-    float: left; /* Float the image to the left of the text */
-    margin-right: 10px; /* Add some space between the image and text */
-    transition: box-shadow 0.3s ease; /* Add a smooth transition for the glow effect */
-    @media (max-width: 600px) {
-  #amazon_logo2 {
-    max-width: 50%; /* Adjust the maximum width for smaller screens */
-  }
-}
-}
-<br>
-#amazon_logo2:hover {
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Glow effect on hover */
-}
-#screenshot {
-    max-width: 100%;
-    height: auto;
-    transition: filter 0.3s ease; /* Add a smooth transition for the glow effect */
-}
+        .more-projects-button {
+            text-align: center;
+            margin: 20px 0;
+        }
 
-#screenshot:hover {
-    filter: drop-shadow(0 0 10px rgba(0, 0, 255, 0.7)); /* Blue glow effect on hover */
-}
+        .more-projects-button a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
 
+        .more-projects-button a:hover {
+            background-color: #45a049;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .experience {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .experience img {
+                margin-bottom: 20px;
+            }
+        }
     </style>
-
-<h1>Gabriel's Projects and Experience</h1>
-
-    <title>DataAnalystPortfolio</title>
-    
 </head>
+<body>
 
-	<!-- Nav -->
-    <nav id="nav-menu">
-        <ul class="links">
-            <a href="index.html">Portfolio Home Page</a>
-            <a href="index.html#viewposts">Projects</a>
-            <a href="Projects and Experience.html#Experience">Experience</a>
-            <a href="More about Gabriel.html">More about Me</a>
-        </ul>
-       
-    </nav>
+<header>
+    <h1>Gabriel's Projects and Experience</h1>
+</header>
 
-    <section id="Experience">
-        <h2>Experience - Operations Analyst - Amazon (Dec 2022 - Sep 2023)</h2>
-        <img id="amazon_logo" src="images/amazon-logo-editorial-vector-illustration-market-136495269.png">
-        <p>
-        <li>Engaged remotely and autonomously to manage and resolve inquiries related to over 40 properties daily, spanning multiple countries.</li><li>Utilized SQL queries to efficiently locate and filter relevant data by address, ensuring prompt and accurate responses.</li><li>Leveraged Excel functions and filters to analyze data, generating insights to address customer issues effectively.</li>
-          <li>Acted as the primary contact for customers and technicians, facilitating seamless communication via Outlook Email and phone channels. Managed the scheduling of product installations, ensuring timely coordination while safeguarding confidential client data in compliance with data privacy regulations.</li>
-          <li>Collaborated effectively with cross-functional team members across diverse time zones.</li> <li>Contributed analytical expertise and insights to optimize workflow, fostering efficient communication and problem-solving within the team.</li>
-            </p>
+<nav id="nav-menu">
+    <a href="index.html">Portfolio Home Page</a>
+    <a href="index.html#viewposts">Projects</a>
+    <a href="Projects and Experience.html#Experience">Experience</a>
+    <a href="More about Gabriel.html">More about Me</a>
+</nav>
 
-<br>
-	     <h2>Experience -Sales and Digital Marketing (Team Leader) - Telco  (June 2024 - Sep 2024)</h2>
-        <img id="amazon_logo1" src="images/Telco.png">
-        <p>
-       <li>Identified, engaged, and converted qualified leads via outreach, social selling, and networking.</li><li>Managed full sales funnel—from pitch to contract—hitting revenue targets.</li><li>Maintained client relationships, delivered proposals, managed renewals, and ensured satisfaction.</li>
-          <li>Monitored campaign performance using analytics tools (e.g., Google Analytics, CRM metrics).</li>
-          <li>Conducted market research to guide both sales outreach and campaign targeting.</li> <li>Coordinated with product teams and external vendors for smooth campaign execution staying current with digital and social selling trends, applying them to strategy.</li>
-            </p>
-<br>
-	        <h2>Experience -Digital Marketing Analyst - TMC Group Of Companies  (Sep 2025 - Oct 2025)</h2>
-        <img id="amazon_logo2" src="images/tmc.jpg">
-        <p>
-       <li>Planed and executed campaigns across SEO, SEM, paid ads, email, and social media.</li><li>Crafted engaging digital content—copy, visuals, landing pages—for brand awareness and lead generation.</li><li>Monitored campaign performance using analytics tools (e.g., Google Analytics, CRM metrics).</li>
-          <li>Reported on KPI : Revenue generated & sales growth, ROI of digital campaigns, Lead quality and conversion rates, Digital channel metrics (traffic, engagement, conversion) and Client retention and satisfaction.</li>
+<section id="Experience">
+    <div class="experience">
+        <img src="images/amazon-logo-editorial-vector-illustration-market-136495269.png" alt="Amazon Logo">
+        <div class="experience-content">
+            <h2>Operations Analyst - Amazon (Dec 2022 - Sep 2023)</h2>
+            <ul>
+                <li>Engaged remotely and autonomously to manage and resolve inquiries related to over 40 properties daily.</li>
+                <li>Utilized SQL queries to efficiently locate and filter relevant data by address.</li>
+                <li>Leveraged Excel functions and filters to analyze data and generate insights.</li>
+                <li>Acted as primary contact for customers and technicians, coordinating installations and safeguarding confidential client data.</li>
+                <li>Collaborated effectively with cross-functional team members across diverse time zones.</li>
+                <li>Contributed analytical expertise to optimize workflow and communication within the team.</li>
+            </ul>
+        </div>
+    </div>
 
-            </p>
-<br>
+    <div class="divider"></div>
 
-    </section>
-	<body>
-    <section>
-            <body>
+    <div class="experience">
+        <img src="images/Telco.png" alt="Telco Logo">
+        <div class="experience-content">
+            <h2>Sales and Digital Marketing (Team Leader) - Telco (June 2024 - Sep 2024)</h2>
+            <ul>
+                <li>Identified, engaged, and converted qualified leads via outreach, social selling, and networking.</li>
+                <li>Managed full sales funnel, hitting revenue targets.</li>
+                <li>Maintained client relationships, delivered proposals, managed renewals, and ensured satisfaction.</li>
+                <li>Monitored campaign performance using analytics tools.</li>
+                <li>Conducted market research to guide sales outreach and campaign targeting.</li>
+                <li>Coordinated with product teams and vendors for smooth campaign execution.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="experience">
+        <img src="images/tmc.jpg" alt="TMC Logo">
+        <div class="experience-content">
+            <h2>Digital Marketing Analyst - TMC Group Of Companies (Sep 2025 - Oct 2025)</h2>
+            <ul>
+                <li>Planned and executed campaigns across SEO, SEM, paid ads, email, and social media.</li>
+                <li>Crafted engaging digital content for brand awareness and lead generation.</li>
+                <li>Monitored campaign performance using analytics tools.</li>
+                <li>Reported on KPIs: Revenue generated, ROI, lead quality, channel metrics, and client satisfaction.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 <div class="more-projects-button">
     <a href="index.html#viewposts">View More Projects</a>
-  </div>
-</body>
-    </section>
-</body>
+</div>
 
+</body>
 </html>
+
