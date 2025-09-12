@@ -164,3 +164,47 @@ h1 {
     font-size: larger;
     background-image: url(Pictures/cool-white-background-ingbh7qw7if21dkn.jpg);
 }
+/* === Divider Styling === */
+.section-divider {
+  margin: 3em auto;
+  border: 0;
+  border-top: 3px solid #ccc;
+  width: 80%;
+}
+
+/* === Experience Section Centering === */
+#experience {
+  text-align: center;
+  padding: 3em 2em;
+}
+
+#experience .posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+}
+
+#experience .posts article {
+  max-width: 750px;
+  text-align: center;
+}
+
+/* === Footer Contact Centering === */
+footer .split.contact {
+  text-align: center;
+  display: block !important;
+}
+
+footer .split.contact section {
+  margin-bottom: 20px;
+}
+
+footer .split.contact ul.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  list-style: none;
+}
+
