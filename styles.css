@@ -164,3 +164,27 @@ h1 {
     font-size: larger;
     background-image: url(Pictures/cool-white-background-ingbh7qw7if21dkn.jpg);
 }
+/* Divider styling */
+.section-divider {
+  margin: 3em auto;
+  border: 0;
+  border-top: 3px solid #ccc;
+  width: 80%;
+}
+
+/* Center footer contact */
+footer .split.contact {
+  text-align: center;
+  display: block !important;
+}
+footer .split.contact section {
+  margin-bottom: 20px;
+}
+footer .split.contact ul.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  list-style: none;
+}
+
